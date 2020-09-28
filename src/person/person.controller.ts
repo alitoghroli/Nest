@@ -31,7 +31,6 @@ export class PersonController {
     @Param('id') id: string,
     @Body() person: CreatePersonDto,
   ): Person {
-    console.log(typeof id);
     return this.personService.updatePerson(id, person);
   }
 
